@@ -1,0 +1,264 @@
+body {
+  background-color: #DEDADA;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  width: 300px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__nav {
+  width: 100%;
+  height: 100px;
+  background: #C1C1C1;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__menu a {
+  margin: 0 5px;
+  color: black;
+}
+.header__menu a:hover {
+  color: blue;
+}
+.header__menu a:active {
+  color: red;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.info__block {
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  background: #f5e8e8;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info__block img {
+  display: block;
+  width: 80%;
+  height: 50%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.about__content-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__content-item {
+  width: 250px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.about__content {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 300px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education,
+.faq,
+.about-info,
+.reviews {
+  margin-bottom: 60px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 150px;
+}
+
+.footer__svg {
+  width: 300px;
+  height: 100px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__svg svg{
+  width: 40px;
+  height: 40px;
+}
+
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.facts__block-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts__item:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+details {
+  width: 100%;
+  min-height: 4.375rem;
+  backdrop-filter: blur(0.1875rem);
+  box-shadow: 0.0625rem 0.3125rem 0.5rem var(--color-grey-dark, rgb(59, 73, 80));
+  border-radius: 1.25rem;
+}
+
+details[open] {
+  position: relative;
+  backdrop-filter: blur(0.625rem);
+}
+
+details[open]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.625rem;
+  height: 100%;
+  background: var(--color-grey-dark, rgb(59, 73, 80));
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+.facts__title-block {
+  position: relative;
+  cursor: pointer;
+  margin: 1.25rem 2.5rem 1.25rem 3.75rem;
+  padding-right: 3.75rem;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 150%;
+}
+
+.facts__title-block::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("./img/cross.png");
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  top: -0.5rem;
+  right: 0rem;
+  transform: rotate(-45deg);
+  transition: var(--trans-slow);
+}
+
+details[open] > .facts__title-block::after {
+  transform: rotate(0deg);
+}
+
+.facts__content {
+  margin: 2.5rem 8.125rem 3.75rem 3.75rem;
+  color: var(--color-black, black);
+}
+
+summary {
+  display: block;
+}
+
+.education__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.education__item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.education__btn {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(213, 210, 210);
+}
+
+.block-text {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.link-record {
+  margin: 30px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  color: rgb(146, 29, 154);
+  background-color: #C1C1C1;
+}
+
+.photo {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
