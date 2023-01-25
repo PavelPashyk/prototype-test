@@ -2,4 +2,4 @@
 
 ### набросок для понимания
 
-https://pavelpashyk.github.io/prototype-test/
+### Ссылка: https://pavelpashyk.github.io/prototype-test/
